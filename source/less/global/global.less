@@ -14,6 +14,7 @@ html {
 
 body {
   position: relative;
+  width: 100%;
   min-width: 320px;
   max-width: 1200px;
   display: flex;
@@ -24,7 +25,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  line-height: 21px;
+  color: #333333;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -32,4 +34,8 @@ body {
 .img {
   max-width: 100%;
   object-fit: cover;
+}
+
+.main-container {
+  flex-grow: 1;
 }
