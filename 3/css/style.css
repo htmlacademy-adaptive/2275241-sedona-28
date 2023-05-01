@@ -90,9 +90,6 @@ body {
   background-color: #81B3D2;
   color: #ffffff;
 }
-.advantages__wrapper .advantages__title {
-  color: #ffffff;
-}
 .advantages__container {
   text-align: center;
   text-transform: uppercase;
@@ -101,10 +98,12 @@ body {
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
+  color: #000000;
+}
+.advantages__wrapper .advantages__title {
+  color: #ffffff;
 }
 .advantages__description {
-  font-size: 14px;
-  line-height: 21px;
   text-transform: uppercase;
 }
 .advantages__attractions {
@@ -116,7 +115,7 @@ body {
   text-decoration: none;
 }
 .description__intro {
-  background-image: url("../img/intro-mobile.jpg");
+  background-image: url("../img/divider.svg"), url("../img/intro-mobile.jpg");
   color: #ffffff;
   background-color: #82b3d3;
   background-repeat: no-repeat;
@@ -147,7 +146,8 @@ body {
   border-bottom: 1px solid #E5E5E5;
 }
 .form__title {
-  padding-bottom: 20px;
+  margin: 0 0 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-align: center;
@@ -197,6 +197,7 @@ body {
 }
 .form__notification {
   font-size: 12px;
+  line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
 }
@@ -209,12 +210,15 @@ body {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  text-decoration: none;
 }
 .main-nav {
   position: relative;
 }
 .photo__title {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   color: #000000;
   align-items: center;
   text-transform: uppercase;
@@ -255,11 +259,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: #000000;
 }
 .video__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
   padding: 0 10px;
   margin: 0 0 38px;
 }
