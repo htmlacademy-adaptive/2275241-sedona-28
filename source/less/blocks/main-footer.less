@@ -1,6 +1,16 @@
 .main-footer {
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    padding: 36px 60px 36px;
+
+    text-align: center;
+
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .main-footer__appeal {
@@ -9,4 +19,27 @@
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.social__link {
+  padding: 6px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 6px;
+  }
 }
