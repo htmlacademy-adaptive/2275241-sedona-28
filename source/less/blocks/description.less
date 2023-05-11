@@ -1,3 +1,29 @@
+.description img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
+}
+
+.description--page img {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
+}
+
 .description__intro {
   padding: 90px 20px 85px;
 
@@ -28,9 +54,13 @@
 }
 
 .description__text {
-  margin-top: 0;
+  margin: 0;
+}
+
+.description__text br {
+  display: none;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 149px;
+    display: block;
   }
 }

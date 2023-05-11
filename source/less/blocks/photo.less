@@ -12,14 +12,39 @@
 }
 
 .photo__item {
+  padding: 24px 20px 10px;
+
+  border-bottom: 1px solid #e5e5e5;
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 66px;
+    padding: 0;
+
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
+  &:first-child {
+    @media (min-width: @tablet-width) {
+      grid-column: 1 / -1;
+    }
   }
 }
 
-.photo__item:first-child {
+.photo__img {
+  display: block;
+  height: 280px;
+
   @media (min-width: @tablet-width) {
-    grid-column: 1/-1;
+    height: 267px;
+  }
+}
+
+.photo__item:first-child .photo__img {
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }
 
@@ -27,35 +52,66 @@
   display: block;
   width: 100%;
   height: 100%;
-
 }
 
 .photo__content {
+  padding: 15px 0;
+
   @media (min-width: @tablet-width) {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 20px 17px 16px;
 
     background-color: #f2f2f2;
-
-    grid-template-columns: 2fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    background-color: #000000;
-    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 16px 20px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo__item:first-child .photo__content {
+  @media (min-width: @tablet-width) {
+    padding: 22px 20px 16px;
+  }
+}
+
+.photo__item:nth-child(3n) .photo__content {
+  @media (min-width: @tablet-width) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .photo__title {
-  align-items: center;
+  margin: 0;
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
+    margin: 0 0 5px;
+
     color: #ffffff;
+  }
+}
+
+.photo__item:first-child .photo__title {
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
 
@@ -66,5 +122,44 @@
 }
 
 .photo__like {
+  display: grid;
+  align-items: baseline;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  gap: 14px;
+  grid-template-columns: auto auto;
+
+  @media (min-width: @tablet-width) {
+    gap: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.photo__like svg {
+  fill: currentColor;
+}
+
+.photo__like span {
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: inherit;
+  }
 }
