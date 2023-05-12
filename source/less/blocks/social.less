@@ -1,1 +1,34 @@
-// later
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.social__link svg {
+  fill: currentColor;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}

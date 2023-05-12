@@ -1,12 +1,29 @@
 .main-footer {
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    padding: 36px 60px 36px;
+
+    text-align: center;
+
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .main-footer__appeal {
+  display: inline-block;
+  margin-bottom: 31px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
