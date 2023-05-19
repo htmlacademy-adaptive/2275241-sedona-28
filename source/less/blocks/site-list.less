@@ -46,7 +46,6 @@
 
 .site-list__link {
   display: inline-block;
-  padding: 19px 0 17px;
 
   font-weight: 700;
   font-size: 18px;
@@ -61,4 +60,19 @@
     line-height: 21px;
     color: #000000;
   }
+
+  &:hover,
+  &:focus {
+    @media (min-width: 768px) {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__link--current {
+  color: #766357;
 }
