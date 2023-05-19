@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="img/png" sizes="32x32" href="favicon.ico/favicon.png">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,7 +59,11 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-1-mobile.jpg" width="320" height="260" alt="Фото здания в городе">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" width="320" height="260" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото здания в городе">
+              </picture>
             </div>
           </div>
           <ul class="advantages__attractions list-reset">
@@ -81,7 +89,11 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-2-mobile.jpg" width="320" height="260" alt="Фото моста Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" width="320" height="260" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
+              </picture>
             </div>
           </div>
         </li>
