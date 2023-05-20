@@ -53,6 +53,9 @@
         <li class="photo__item">
           <a class="photo__img" href="#">
             <picture>
+              <source type="img/webp" media="(min-width: 1200px)" srcset="img/catalog-1-desktop.webp 1x, img/catalog-1-desktop@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/catalog-1-tablet.webp 1x, img/catalog-1-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/catalog-1-mobile.webp 1x, img/catalog-1-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/catalog-1-desktop.jpg 1x, img/catalog-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.jpg 1x, img/catalog-1-tablet@2x.jpg 2x">
               <img src="img/catalog-1-mobile.jpg" width="280" height="280" srcset="img/catalog-1-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -74,6 +77,9 @@
         <li class="photo__item">
           <a class="photo__img" href="#">
             <picture>
+              <source type="img/webp" media="(min-width: 1200px)" srcset="img/catalog-2-desktop.webp 1x, img/catalog-2-desktop@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/catalog-2-tablet.webp 1x, img/catalog-2-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/catalog-2-mobile.webp 1x, img/catalog-2-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/catalog-2-desktop.jpg 1x, img/catalog-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.jpg 1x, img/catalog-2-tablet@2x.jpg 2x">
               <img src="img/catalog-2-mobile.jpg" width="280" height="280" srcset="img/catalog-2-mobile@2x.jpg 2x" alt="Местная растительность">
@@ -95,6 +101,9 @@
         <li class="photo__item">
           <a class="photo__img" href="#">
             <picture>
+              <source type="img/webp" media="(min-width: 1200px)" srcset="img/catalog-3-desktop.webp 1x, img/catalog-3-desktop@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/catalog-3-tablet.webp 1x, img/catalog-3-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/catalog-3-mobile.webp 1x, img/catalog-3-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/catalog-3-desktop.jpg 1x, img/catalog-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.jpg 1x, img/catalog-3-tablet@2x.jpg 2x">
               <img src="img/catalog-3-mobile.jpg" width="280" height="280" srcset="img/catalog-3-mobile@2x.jpg 2x" alt="Дорога на север">
@@ -116,6 +125,9 @@
         <li class="photo__item">
           <a class="photo__img" href="#">
             <picture>
+              <source type="img/webp" media="(min-width: 1200px)" srcset="img/catalog-4-desktop.webp 1x, img/catalog-4-desktop@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/catalog-4-tablet.webp 1x, img/catalog-4-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/catalog-4-mobile.webp 1x, img/catalog-4-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/catalog-4-desktop.jpg 1x, img/catalog-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.jpg 1x, img/catalog-4-tablet@2x.jpg 2x">
               <img src="img/catalog-4-mobile.jpg" width="280" height="280" srcset="img/catalog-4-mobile@2x.jpg 2x" alt="Мост Дьявола">
@@ -140,7 +152,14 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br>не подорожали в очередной раз!</p>
       <div class="video__player">
-        <img src="img/video-mobile.jpg" width="280" height="177" alt="Видео">
+        <picture>
+          <source type="img/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="img/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="img/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео">
+        </picture>
         <button class="video__play" type="button">
           <span class="visually-hidden">Play</span>
         </button>
