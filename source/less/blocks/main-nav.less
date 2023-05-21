@@ -35,11 +35,13 @@
 
   height: 7px;
 
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
@@ -93,7 +95,7 @@
 
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     position: static;
 
     display: grid;
