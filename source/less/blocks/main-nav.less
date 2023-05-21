@@ -41,7 +41,7 @@
     rgba(0, 0, 0, 0.2) 100%
   );
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
@@ -65,6 +65,15 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -86,7 +95,7 @@
 
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     position: static;
 
     display: grid;
